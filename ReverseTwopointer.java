@@ -1,5 +1,5 @@
 import java.util.Arrays;
-class Main{
+class ReverseTwopointer {
 
     public static void Printer(int[] arr){
         int start = 0;
