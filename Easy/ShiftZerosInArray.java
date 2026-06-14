@@ -3,7 +3,7 @@ package Easy;
 class ShiftZerosInArray{
     public static void Printer(int[] arr){
         int k = 0;
-        for(int i = 0; i<arr.length; i++){
+        for(int i = 0; i<arr.length; i++){// loop to iterate through the array
             if(arr[i] != 0){
                 arr[k] = arr[i];
                 k++;
