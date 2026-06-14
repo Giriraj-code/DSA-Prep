@@ -4,7 +4,7 @@ class SecondLargestNumber{
     public static int Printer(int[] num){
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
-        for(int nums : num){
+        for(int nums : num){ // Enhanced for loop to iterate through the array
             if(nums > largest){
                 secondLargest = largest;
                 largest = nums;
