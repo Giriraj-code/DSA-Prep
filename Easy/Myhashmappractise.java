@@ -8,5 +8,8 @@ public class Myhashmappractise {
         map.put("Ramesh",03);
 
         System.out.println(map.get("Rahul"));
+        System.out.println(map.getOrDefault("Suresh",04));
+        System.out.println(map.containsKey("Rahul"));
+
     }
 }
