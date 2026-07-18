@@ -1,4 +1,4 @@
-package Easy;
+package Easy.ARRAYS;
 class CellingOfANumber {
 
     public static int Celling(int[] arr , int target){

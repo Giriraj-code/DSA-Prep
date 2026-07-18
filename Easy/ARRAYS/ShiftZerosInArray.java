@@ -1,4 +1,4 @@
-package Easy;
+package Easy.ARRAYS;
 
 class ShiftZerosInArray{
     public static void Printer(int[] arr){

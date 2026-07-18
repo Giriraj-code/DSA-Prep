@@ -1,4 +1,4 @@
-package Easy;
+package Easy.ARRAYS;
 import java.util.Arrays;
 class ReverseTwopointer {
 

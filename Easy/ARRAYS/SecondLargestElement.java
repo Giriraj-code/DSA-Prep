@@ -1,4 +1,4 @@
-package Easy;
+package Easy.ARRAYS;
 
 class SecondLargestNumber{
     public static int Printer(int[] num){

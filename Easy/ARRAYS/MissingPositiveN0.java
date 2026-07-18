@@ -1,4 +1,4 @@
-package Easy;
+package Easy.ARRAYS;
 import java.util.HashSet;
 import java.util.Set;
 public class MissingPositiveN0 {
@@ -26,3 +26,7 @@ public class MissingPositiveN0 {
     }
     
 }//Output: 3
+
+
+
+

@@ -1,4 +1,4 @@
-package Easy;
+package Easy.LINKEDLIST;
 class Node{
     int data;
     Node next;

@@ -1,4 +1,4 @@
-package Easy;
+package Easy.RECURSION;
 class RecursiveFactorial{
 
     public static long Factorial(int n){

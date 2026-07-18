@@ -1,4 +1,4 @@
-package Easy;
+package Easy.RECURSION;
 class RecursiveFibonacciSeries {
     public static int Fibonacci(int n) {
         if (n <= 0) {
