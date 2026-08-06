@@ -1,4 +1,4 @@
-package Easy;
+package Easy.HASH;
 import java.util.HashMap;
 public class Myhashmappractise {
     public static void main(String[] args){

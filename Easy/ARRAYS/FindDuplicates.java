@@ -1,4 +1,4 @@
-package Easy;
+package Easy.ARRAYS;
 
 public class FindDuplicates {
     public static void main(String[] args) {

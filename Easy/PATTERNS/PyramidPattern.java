@@ -1,4 +1,4 @@
-package Easy;
+package Easy.PATTERNS;
 public class PyramidPattern {
     public static void main(String[] args) {
         int n = 5;
