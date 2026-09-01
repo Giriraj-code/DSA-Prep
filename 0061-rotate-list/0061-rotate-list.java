@@ -33,8 +33,8 @@ class Solution {
 
         temp.next = head;
         int count = 1;
-
-        while(count < length - k){
+        int res = length - k;
+        while(count < res){
             head = head.next;
             count++;
         }
