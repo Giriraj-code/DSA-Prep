@@ -5,7 +5,7 @@ class Solution {
         
         while (i < n) {
             if (nums[i] == val) {
-                // Replace current element with the last element, then shrink the array size
+              
                 nums[i] = nums[n - 1];
                 n--;
             } else {
