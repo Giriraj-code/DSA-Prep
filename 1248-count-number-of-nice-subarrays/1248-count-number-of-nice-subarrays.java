@@ -3,26 +3,17 @@ class Solution {
         return atMost(nums, k) - atMost(nums, k - 1);
     }
 
-    public int atMost(int[] nums, int goal) {
-        if (goal < 0) {
-            return 0;
-        }
+    private int atMost(int[] nums, int k) {
+        int left = 0, count = 0, odds = 0;
 
-        int l = 0;
-        int r = 0;
-        int sum = 0;
-        int count = 0;
+        for (int right = 0; right < nums.length; right++) {
+            odds += nums[right] & 1;
 
-        while (r < nums.length) {
-            sum += (nums[r] % 2);
-
-            while (sum > goal) {
-                sum -= (nums[l] % 2);
-                l++;
+            while (odds > k) {
+                odds -= nums[left++] & 1;
             }
 
-            count += (r - l + 1);
-            r++;
+            count += right - left + 1;
         }
 
         return count;
