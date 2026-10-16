@@ -4,23 +4,14 @@ class Solution {
     }
 
     private int atMost(int[] nums, int k) {
-        if (k < 0) return 0;
-
         int[] freq = new int[20001];
-        int left = 0;
-        int distinct = 0;
-        int count = 0;
+        int left = 0, distinct = 0, count = 0;
 
         for (int right = 0; right < nums.length; right++) {
-            if (freq[nums[right]]++ == 0) {
-                distinct++;
-            }
+            if (freq[nums[right]]++ == 0) distinct++;
 
             while (distinct > k) {
-                if (--freq[nums[left]] == 0) {
-                    distinct--;
-                }
-                left++;
+                if (--freq[nums[left++]] == 0) distinct--;
             }
 
             count += right - left + 1;
