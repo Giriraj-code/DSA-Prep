@@ -1,6 +1,7 @@
 class Solution {
 
-     static int[] MergeSort(int[] nums, int low, int high){
+        static int[] MergeSort(int[] nums, int low, int high){
+            
             if(low >= high){
                 return nums;
             }
@@ -8,9 +9,7 @@ class Solution {
             int mid = low + (high - low) / 2;
 
             MergeSort(nums,low,mid);
-
-            MergeSort(nums,mid + 1, high);
-
+            MergeSort(nums,mid+1,high);
             Merger(nums,low,mid,high);
             return nums;
         }
@@ -23,7 +22,6 @@ class Solution {
             int k = 0;
 
             while(i <= mid && j <= high){
-
                 if(nums[i] < nums[j]){
                     temp[k] = nums[i];
                     i++;
@@ -50,9 +48,8 @@ class Solution {
                 nums[low + p] = temp[p];
             }
         }
-
     public int[] sortArray(int[] nums) {
-        MergeSort(nums,0,nums.length-1);
-        return nums;
+      MergeSort(nums,0,nums.length - 1);
+      return nums;
     }
 }
