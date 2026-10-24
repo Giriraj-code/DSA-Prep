@@ -1,22 +1,25 @@
-
-import java.util.HashMap;
-
 class Solution {
     public boolean canBeEqual(int[] target, int[] arr) {
-        int n = arr.length;
-        HashMap<Integer, Integer> map = new HashMap<>();
-
-        for (int i = 0; i < n; i++) {
-            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+        if (target.length != arr.length) {
+            return false;
         }
-        for (int i = 0; i < target.length; i++) {
-            int num = target[i];
 
-            if (!map.containsKey(num) || map.get(num) == 0) {
-                return false;
+        boolean[] visited = new boolean[arr.length];
+
+        for (int i = 0; i < target.length; i++) {
+            boolean found = false;
+
+            for (int j = 0; j < arr.length; j++) {
+                if (target[i] == arr[j] && !visited[j]) {
+                    visited[j] = true;
+                    found = true;
+                    break;
+                }
             }
 
-            map.put(num, map.get(num) - 1);
+            if (!found) {
+                return false;
+            }
         }
 
         return true;
